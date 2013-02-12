@@ -4,7 +4,7 @@ function raiseGimpWindows (raise) {
   var clients = workspace.clientList()
   for (var i=0; i<clients.length; i++) {
   // raise GIMP toolbox and docks
-    if (clients[i].windowRole == "gimp-toolbox" || 
+    if (clients[i].windowRole == "gimp-toolbox" ||
         clients[i].windowRole == "gimp-dock")  {
       clients[i].keepAbove = raise;
     }
